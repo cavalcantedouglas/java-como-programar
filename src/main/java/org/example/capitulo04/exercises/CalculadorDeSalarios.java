@@ -1,4 +1,4 @@
-package org.example.cap4InstrucoesDeControle.exercises;
+package org.example.capitulo04.exercises;
 
 /**
  * Desenvolva um aplicativo Java que determina o salário bruto de cada um de três empregados. A empresa paga

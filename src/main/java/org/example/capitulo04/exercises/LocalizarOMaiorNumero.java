@@ -1,4 +1,4 @@
-package org.example.cap4InstrucoesDeControle.exercises;
+package org.example.capitulo04.exercises;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package org.example.cap4InstrucoesDeControle;
+package org.example.capitulo04;
 
 public class StudentTest {
     public static void main(String[] args) {
