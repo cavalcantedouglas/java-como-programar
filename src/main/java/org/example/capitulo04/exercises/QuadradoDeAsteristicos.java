@@ -20,7 +20,7 @@ public class QuadradoDeAsteristicos {
         if (lado > 1) {
             // Imrpime o topo do quadrado
             while(controller <= lado) {
-                System.out.print("*");
+                System.out.print("*  ");
                 controller++;
             }
             // Aqui pula uma linha e seta o valor do controller de novo para 1
@@ -30,27 +30,27 @@ public class QuadradoDeAsteristicos {
             if(controller == 1) {
                 // Esse while vai imprimir o lado esquerdo do quadrado. Coloquei lado -2, porque estou descontando o topo e a base.
                 while (controller <= lado -2) {
-                    System.out.print("*");
+                    System.out.print("*  ");
                     // Esse if aqui é pra forcar o laco de repeticao while logo abaixo, porquye esse outro while é responsavel por colocar espacos entre os asteristicos do quadrado.
                     if(controller != lado) {
                         controllerLado = 1;
                         while (controllerLado <= lado -2) {
-                            System.out.print(" ");
+                            System.out.print("   ");
                             controllerLado++;
                         }
                     }
                     // Aqui finaliza a primeira linha com espacos em branco e o laco se repete até a quantidade que foi definida na variavel lado do inicio do programa
-                    System.out.println("*");
+                    System.out.println("*  ");
                     controller++;
                 }
             }
             // Novamente setando o controller para 1 e imprimindo a base
             controller = 1;
             while(controller <= lado) {
-                System.out.print("*");
+                System.out.print("*  ");
                 controller++;
             }
-        } else System.out.println("*");
+        } else System.out.println("*  ");
 
 
 
