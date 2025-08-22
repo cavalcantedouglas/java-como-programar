@@ -12,15 +12,18 @@ public class ImprimindoEquivalenteDecimalNumeroBinario {
         Scanner input = new Scanner(System.in);
         int binario = input.nextInt();
 
-        int a = binario % 10;
-        int b = (binario / 10) % 10;
-        int c = (binario / 100) % 10;
-        int d = binario / 1000;
+        System.out.print("O equivalente binário do numéro " + binario + " é: ");
 
-        int equivalenteDecimal = a * 1 + b * 2 + c * 4 + d * 8;
+        int decimalValue = 0;
+        int powerOfTwo = 1;
 
-        System.out.println("Equivalente decimal do número binário " + binario + " é = " + equivalenteDecimal);
-
+        while (binario > 0) {
+            int binaryNumber = binario % 10;
+            decimalValue += binaryNumber * powerOfTwo;
+            binario /= 10;
+            powerOfTwo *= 2;
+        }
+        System.out.print(decimalValue);
 
         input.close();
 
