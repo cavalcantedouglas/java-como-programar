@@ -6,28 +6,16 @@ public class TabuleiroDeXafrez {
 
     public static void main(String[] args) {
 
-        int number = 1;
-
-
-        while (number <= 8) {
-            int line = 1;
-            if (number % 2 == 1) {
-               while (line <= 8) {
-                   System.out.print("* ");
-                   System.out.print(" ");
-                   line++;
-               }
-           } else {
-               while (line <= 8) {
-                   System.out.print(" ");
-                   System.out.print("* ");
-                   line++;
-               }
-           }
+        int line = 1;
+        while (line <= 8) {
+            int row = 1;
+            if (line % 2 == 0) System.out.print(" ");
+            while (row <= 8 ) {
+                 System.out.print("* ");
+                 row++;
+             }
             System.out.println();
-            number++;
+            line++;
         }
-
     }
-
 }
